@@ -1,4 +1,44 @@
-.ViewerBox {
+.react-chat-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.react-chat-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 1200px) {
+    .react-chat-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .react-chat-container {
+        max-width: 960px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .react-chat-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .react-chat-container {
+        max-width: 540px;
+    }
+}
+
+.react-chat-viewerBox {
     border-color: rgba(33,37,41,0.15);
     color: #212529;
     background-color: #fff;
@@ -15,7 +55,8 @@
     /* box-sizing: border-box; */
     outline: 0;
 }
-.MessagesList {
+
+.react-chat-messagesList {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -25,7 +66,7 @@
     scroll-behavior: smooth;
 }
 
-.MessagesListContent {
+.react-chat-messagesListContent {
     padding: 16px 16px;
     width: 100%;
     box-sizing: border-box;
@@ -37,7 +78,7 @@
     overflow: hidden;
 }
 
-.MessageBox {
+.react-chat-messageBox {
     max-width: 80%;
     background: none;
     box-sizing: border-box;
@@ -47,38 +88,38 @@
     position: relative;
 }
 
-.MessageBoxLeft {
+.react-chat-messageBoxLeft {
     padding-left: 40px;
     align-items: flex-start;
     text-align: left;
 }
 
-.MessageBoxRight {
+.react-chat-messageBoxRight {
     padding-right: 40px;
     align-self: flex-end;
     align-items: flex-end;
     text-align: right;
 }
 
-.Message {
+.react-chat-message {
     max-width: 100%;
     margin: 2px 0 0;
     position: relative;
     transition: margin .2s ease-in-out;
 }
 
-.MessageLeft {
+.react-chat-messageLeft {
     align-items: flex-start;
     text-align: left;
 }
 
-.MessageRight {
+.react-chat-messageRight {
     align-self: flex-end;
     align-items: flex-end;
     text-align: right;
 }
 
-.Bubble {
+.react-chat-bubble {
     transition: box-shadow .2s ease-in-out;
     order: -1;
     box-shadow: none;
@@ -94,7 +135,7 @@
     word-break: break-word;
 }
 
-.LeftBubble {
+.react-chat-leftBubble {
     border-bottom-left-radius: 2px;
     border-color: #e4e7eb;
     color: #212529;
@@ -102,7 +143,7 @@
     float: left;
 }
 
-.RightBubble {
+.react-chat-rightBubble {
     border-bottom-right-radius: 2px;
     border-color: #007bff;
     color: #fff;
@@ -110,7 +151,7 @@
     float: right;
 }
 
-.Avatar {
+.react-chat-avatar {
     border-radius: 100%;
     width: 32px;
     height: 32px;
@@ -124,15 +165,15 @@
     bottom: 20px;
 }
 
-.AvatarLeft {
+.react-chat-avatarLeft {
     left: 0;
 }
 
-.AvatarRight {
+.react-chat-avatarRight {
     right: 0;
 }
 
-.InputBox {
+.react-chat-inputBox {
     border-color: inherit;
     color: #212529;
     background-color: #fff;
@@ -145,7 +186,7 @@
     flex-wrap: nowrap;
 }
 
-.Textare {
+.react-chat-textarea {
     margin: 0;
     padding: 0;
     border: 0;
@@ -164,7 +205,7 @@
     resize: none;
 }
 
-.SendButton {
+.react-chat-sendButton {
     padding: 0;
     border-color: transparent !important;
     color: inherit;
@@ -192,11 +233,11 @@
     position: relative;
 }
 
-.SendButton:hover {
+.react-chat-sendButton:hover {
     color: #007bff;
 }
 
-.Additional {
+.react-chat-additional {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -204,23 +245,23 @@
     font-size: 13px;
 }
 
-.BubbleWithError {
+.react-chat-bubbleWithError {
     position: relative;
 }
 
-.Error {
+.react-chat-error {
     position: absolute;
 }
 
-.ErrorLeft {
+.react-chat-errorLeft {
     right: -30px;
 }
 
-.ErrorRight {
+.react-chat-errorRight {
     left: -30px;
 }
 
-.Notification {
+.react-chat-notification {
     width: 100%;
     word-break: break-word;
 }

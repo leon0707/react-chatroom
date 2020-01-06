@@ -28,6 +28,7 @@ class ChatRoom extends React.Component {
                     messages={this.props.messages}
                     userId={this.props.user_info.id}
                     onSendMessage={this.handleOnSendMessage}
+                    timestampFormat={'MMMM Do YYYY, h:mm a'}
                 />
             </Container>
         );
